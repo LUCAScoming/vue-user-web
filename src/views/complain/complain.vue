@@ -8,10 +8,11 @@
         <el-button type="primary" size="medium">查询</el-button>
       </el-form-item>
       <el-form-item>
-        <el-button type="success" size="medium" @click="form1">新增</el-button>
+        <el-button type="success" size="medium" @click="form1">我要建议</el-button>
       </el-form-item>
     </el-form>
     <el-table v-loading="loading" :data="tableData">
+      <el-table-column prop="suggestionId" label="编号"></el-table-column>
       <el-table-column prop="ownerId" label="述求事项" />
       <el-table-column prop="ownerName" label="述求时间" />
       <el-table-column prop="sex" label="状态" />
@@ -48,6 +49,7 @@ export default {
       value: '',
       value1: '',
       tableData: [{
+        suggestionId:2019041202 ,
         ownerId: '咱们小区物业费偏贵...',
         ownerName: '2019-04-12',
         sex: '待处理',

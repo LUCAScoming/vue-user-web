@@ -8,7 +8,7 @@
         <el-button type="primary" size="medium">查询</el-button>
       </el-form-item>
       <el-form-item>
-        <el-button type="success" size="medium" @click="form2">新增</el-button>
+        <el-button type="success" size="medium" @click="form2">申请服务</el-button>
       </el-form-item>
     </el-form>
     <el-table v-loading="loading" :data="tableData">
