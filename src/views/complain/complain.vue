@@ -61,7 +61,7 @@ export default {
         pageObj: {
           pageNum: 1,
           pageSize: 10,
-          ownerInfo: {}
+          ownerInfo: { }
         }
       },
       options: [{
